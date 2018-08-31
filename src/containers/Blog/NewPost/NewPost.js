@@ -9,6 +9,10 @@ class NewPost extends Component {
         author: 'Max'
     }
 
+    componentDidMount() {
+        console.log('Inside New post did mount', this.props);
+    }
+
     postDataHandler = () => {
         const data =  {
             title: this.state.title,
